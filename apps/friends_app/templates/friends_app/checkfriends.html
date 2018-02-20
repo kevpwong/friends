@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Friends</title>
+</head>
+<body>
+
+    <h2>{{name}}'s Friends</h2>
+    {% for friend in currentfriends %}
+        {{friend}} <br>
+    {% endfor %}
+    <h2>{{name}} is not friends with</h2>
+    {% for friend in notfriends %}
+        {{friend}} <br>
+    {% endfor %}
+
+</body>
+</html>
